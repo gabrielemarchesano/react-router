@@ -1,2 +1,6 @@
 @import url("bootstrap");
 @import url("bootstrap-icons");
+
+.product-image{
+  scale: 0.6;
+}
