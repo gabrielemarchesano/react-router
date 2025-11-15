@@ -2,5 +2,10 @@
 @import url("bootstrap-icons");
 
 .product-image{
-  scale: 0.6;
+  width: 200px;
+  height: 200px;
+}
+
+.card{
+  height: 100%;
 }
