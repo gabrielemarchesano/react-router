@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container-fluid px-5">
           <a class="navbar-brand" href="/"><i className="bi bi-bullseye fs-1"></i></a>
           <div class="items">
             <ul class="navbar-nav flex-row gap-4">
