@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export default function Navbar() {
 
   const linkItems = [
@@ -28,7 +30,7 @@ export default function Navbar() {
               {
                 linkItems.map((item) => (
                   <li class="nav-item" key={item.id}>
-                    <a class="nav-link" aria-current="page" href={item.path}>{item.body}</a>
+                    <NavLink class="nav-link" aria-current="page" to={item.path}>{item.body}</NavLink>
                   </li>
                 ))
               }
