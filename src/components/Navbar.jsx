@@ -22,15 +22,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
+      <nav className="navbar">
         <div className="container-fluid px-5">
-          <NavLink className="navbar-brand" to="/"><i className="bi bi-bullseye fs-1"></i></NavLink>
+          <NavLink className="navbar-brand text-white" to="/"><i className="bi bi-bullseye fs-1 link"></i></NavLink>
           <div className="items">
             <ul className="navbar-nav flex-row gap-4">
               {
                 linkItems.map((item) => (
                   <li className="nav-item" key={item.id}>
-                    <NavLink className="nav-link" aria-current="page" to={item.path}>{item.body}</NavLink>
+                    <NavLink className="nav-link link text-white" aria-current="page" to={item.path}>{item.body}</NavLink>
                   </li>
                 ))
               }

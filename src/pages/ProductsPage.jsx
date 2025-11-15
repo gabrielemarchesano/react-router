@@ -24,7 +24,7 @@ export default function ProductsPage() {
             products.map((product) => (
               <li className="list-unstyled" key={product.id}>
                 <div className="card">
-                  <div className="card-header d-flex p-0 align-items-center">
+                  <div className="card-header d-flex p-0 align-items-center rounded">
                     <div className="px-3 py-4">
                       <img src={product.image} alt="" className="card-img-top product-image" />
                     </div>

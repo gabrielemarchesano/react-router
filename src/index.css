@@ -1,6 +1,14 @@
 @import url("bootstrap");
 @import url("bootstrap-icons");
 
+html{
+  height: 100vh;
+}
+
+.navbar{
+  background-color: #363636;
+}
+
 .product-image{
   width: 200px;
   height: 200px;
@@ -8,4 +16,19 @@
 
 .card{
   height: 100%;
+  background-color: #46464c;
+  color: white;
+  border: solid 1px #363636;
+}
+
+.card-header{
+  background-color: #363636;
+}
+
+.link:hover{
+  color: #030530;
+}
+
+.active{
+  border-bottom: white;
 }
