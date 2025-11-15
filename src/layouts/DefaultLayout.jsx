@@ -5,7 +5,9 @@ export default function DefaultLayout(){
   return(
     <>
       <Header />
-      <Outlet />
+      <div className="container-fluid px-5">
+        <Outlet />
+      </div>
     </>
   )
 }
