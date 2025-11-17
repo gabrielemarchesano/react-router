@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom";
+
 
 export default function ProductPage(){
 
@@ -36,6 +37,10 @@ export default function ProductPage(){
 
         </div>
       </div>
+        <div className="mt-2">
+          <Link to="/products" type="button" className="btn btn-dark me-2">Back</Link>
+          <a href={`/products/${Number(id) <= 20 ? Number(id) + 1 : alert("Product not found")}`} type="button" className="btn btn-dark">Next</a>
+        </div>
     </>
   )
 }
