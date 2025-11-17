@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ProductsPage() {
 
@@ -23,6 +24,7 @@ export default function ProductsPage() {
           {
             products.map((product) => (
               <li className="list-unstyled" key={product.id}>
+                <Link to={`/products/${product.id}`} className="text-decoration-none">
                 <div className="card">
                   <div className="card-header d-flex p-0 align-items-center rounded">
                     <div className="px-3 py-4">
@@ -39,8 +41,9 @@ export default function ProductsPage() {
                     <p>{product.description}</p>
                     <p><span className="bold">Rates:</span> {product.rating.rate}</p>
                     <p><span className="bold">Remaining:</span> {product.rating.count} piecies</p>
-                  </div> */}
+                    </div> */}
                 </div>
+              </Link>
               </li>
             ))
           }
