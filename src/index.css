@@ -19,18 +19,17 @@ html{
   background-color: #46464c;
   color: white;
   border: solid 1px #363636;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .card-header{
   background-color: #363636;
 }
 
-.link:hover{
-  color: #030530;
-}
-
 .active{
-  border-bottom: white;
+  border-bottom: 1px solid white;
 }
 
 .bold{

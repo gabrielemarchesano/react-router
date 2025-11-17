@@ -5,7 +5,7 @@ export default function DefaultLayout(){
   return(
     <>
       <Header />
-      <div className="container-fluid px-5">
+      <div className="container-fluid px-5 py-3 text-center">
         <Outlet />
       </div>
     </>

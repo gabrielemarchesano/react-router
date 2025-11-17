@@ -18,8 +18,8 @@ export default function ProductsPage() {
 
   return (
     <>
-      <ul className="p-0">
-        <div className="row row-cols-1 row-cols-md-3 py-4 row-gap-4">
+      <ul className="p-0 text-start">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 py-4 row-gap-4">
           {
             products.map((product) => (
               <li className="list-unstyled" key={product.id}>
@@ -33,13 +33,13 @@ export default function ProductsPage() {
                       <small><span className="bold">Price:</span> {product.price}$</small>
                     </div>
                   </div>
-                  <div className="card-body">
+                  {/* <div className="card-body">
                     <p><span className="bold">Category:</span> {product.category}</p>
                     <label htmlFor="" className="bold">Description:</label>
                     <p>{product.description}</p>
                     <p><span className="bold">Rates:</span> {product.rating.rate}</p>
                     <p><span className="bold">Remaining:</span> {product.rating.count} piecies</p>
-                  </div>
+                  </div> */}
                 </div>
               </li>
             ))

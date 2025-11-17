@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 export default function Navbar() {
 
@@ -24,7 +24,7 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="container-fluid px-5">
-          <NavLink className="navbar-brand text-white" to="/"><i className="bi bi-bullseye fs-1 link"></i></NavLink>
+          <Link className="navbar-brand text-white" to="/"><i className="bi bi-bullseye fs-1"></i></Link>
           <div className="items">
             <ul className="navbar-nav flex-row gap-4">
               {
