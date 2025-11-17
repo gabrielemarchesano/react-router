@@ -19,16 +19,21 @@ export default function ProductPage(){
 
   return(
     <>
-      <div className="container">
-        <div className="card product-card d-flex flex-row">
-          <img src={product.image} className="product-image" />
-          <div className="card-body">
-            <p><span className="bold">Category:</span> {product.category}</p>
-            <label htmlFor="" className="bold">Description:</label>
-            <p>{product.description}</p>
-            <p><span className="bold">Rates:</span> {product.rating.rate}</p>
-            <p><span className="bold">Remaining:</span> {product.rating.count} piecies</p>
-          </div>
+      <div className="container d-flex justify-content-center">
+        <div className="card flex-row justify-content-evenly product-card">
+            <div className="d-flex justify-content-center align-items-center px-4 image-container">
+              <img src={product.image} className="product-image" />
+            </div>
+            <div>
+              <div className="card-body text-start">
+                <p><span className="bold">Category:</span> {product.category}</p>
+                <label htmlFor="" className="bold">Description:</label>
+                <p>{product.description}</p>
+                <p><span className="bold">Rates:</span> {product.rate}</p>
+                <p><span className="bold">Remaining:</span> {product.count} piecies</p>
+              </div>
+            </div>
+
         </div>
       </div>
     </>

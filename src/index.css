@@ -15,7 +15,6 @@ html{
 }
 
 .card{
-  height: 100%;
   background-color: #46464c;
   color: white;
   border: solid 1px #363636;
@@ -28,6 +27,10 @@ html{
   background-color: #363636;
 }
 
+.product-card{
+  width: 50%;
+}
+
 .active{
   border-bottom: 1px solid white;
 }
@@ -35,4 +38,8 @@ html{
 .bold{
   font-size: medium;
   font-weight: 700;
+}
+
+.image-container{
+  border-right: 1px solid lightgray;
 }
