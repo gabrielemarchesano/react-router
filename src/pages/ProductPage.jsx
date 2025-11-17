@@ -25,7 +25,7 @@ export default function ProductPage(){
               <img src={product.image} className="product-image" />
             </div>
             <div>
-              <div className="card-body text-start">
+              <div className="single-card-body card-body text-start">
                 <p><span className="bold">Category:</span> {product.category}</p>
                 <label className="bold">Description:</label>
                 <p>{product.description}</p>

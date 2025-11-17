@@ -43,3 +43,15 @@ html{
 .image-container{
   border-right: 1px solid lightgray;
 }
+
+@media screen and (max-width: 992px){
+  .product-card{
+    flex-direction: column !important;
+  }
+
+  .image-container{
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+    padding: 1rem 0; 
+  }
+}
