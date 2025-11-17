@@ -20,7 +20,7 @@ export default function ProductsPage() {
   return (
     <>
       <ul className="p-0 text-start">
-        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 py-4 row-gap-4">
+        <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 py-4 row-gap-4">
           {
             products.map((product) => (
               <li className="list-unstyled" key={product.id}>
