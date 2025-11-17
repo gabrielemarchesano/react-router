@@ -27,10 +27,10 @@ export default function ProductPage(){
             <div>
               <div className="card-body text-start">
                 <p><span className="bold">Category:</span> {product.category}</p>
-                <label htmlFor="" className="bold">Description:</label>
+                <label className="bold">Description:</label>
                 <p>{product.description}</p>
-                <p><span className="bold">Rates:</span> {product.rate}</p>
-                <p><span className="bold">Remaining:</span> {product.count} piecies</p>
+                <p><span className="bold">Rates:</span> {product.rating ? product.rating.rate : null}</p>
+                <p><span className="bold">Remaining:</span> {product.rating ? product.rating.count : null} piecies</p>
               </div>
             </div>
 
