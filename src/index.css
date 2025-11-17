@@ -32,3 +32,8 @@ html{
 .active{
   border-bottom: white;
 }
+
+.bold{
+  font-size: medium;
+  font-weight: 700;
+}
